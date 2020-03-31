@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#survey{
+    background: url(https://s1.1zoom.me/b5050/496/Australia_Houses_Rivers_466458_2560x1440.jpg) no-repeat 50% 50%;
+    height: 100vmin;
+    width: 100%;
+    background-attachment: fixed;
+    opacity: 0.9;
+}
+.box{
+  width:500px;
+  height: 720px;
+  background:#000;
+  color:#fff;
+  top:50%;
+  left:50%;
+  position: absolute;
+  box-sizing: border-box;
+  transform: translate(-50%, -50%);
+  padding: 65px 25px;
+}
+
+
+h2{
+   margin: 0;
+   padding: 0 0 10px;
+   text-align:center;
+   font-size: 22px;
+}
+.avatar{
+    height: 90px;
+    width: 90px;
+    border-radius:50%;
+    position: absolute;
+    top:-50px;
+    left:calc(50% - 50px);
+}
+
+    
+#name-label,#email-label,#number-label,#select-label,p,#ta{
+    margin:0;
+    padding: 0;
+    font-weight:bold;
+    font-size: 17px;
+}
+.box input[type="text"], input[type="email"],input[type="number"]{
+    width:100%;
+    margin-bottom: 5px;
+    border:none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height:20px;
+    color:white;
+}
+.box #submit{
+    border:none;
+    outline:none;
+    height:40px;
+    background-color: orangered;
+    color: #fff;
+    font-size: 18px;;
+    width: 100%;
+}
+.box #comments{
+    width: 100%;
+}
+@media(max-width: 786px){
+    
+    #survey{
+        width: 786px;
+        height: 100vh;
+    }
+}

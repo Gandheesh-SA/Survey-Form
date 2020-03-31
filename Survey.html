@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey </title>
+    <link rel="stylesheet" href="survey.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="survey">
+        <div class="box">
+            <img src="https://cdn0.iconfinder.com/data/icons/users-16/16/person_simple-512.png" class="avatar">
+           <h2> WEB DEVLOPMENT</h2>
+           <form id="survey-form">
+           <label id="name-label" for="name"> Username:</label><br><br>
+           <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+           <label id="email-label" for="email">Email:</label><br><br>
+           <input id="email" type="email" name="email" placeholder="Enter your email" pattern required><br><br>
+           <label id="number-label" for="number">Contact Number:</label><br><br>
+           <input type="number" minlength="10" maxlength="10" id="number" placeholder="Enter your number" pattern required><br><br>
+           <label id="select-label" for="dropdown">Select your Branch:</label>
+            <select id="dropdwon" required>
+                <option value="CSE">CSE</option>
+                <option value="ECE">ECE</option>
+                <option value="EEE">EEE</option>
+                <option value="ME"> ME</option>
+            </select><br><br>
+            <p> Select your year of study:</p><br>
+            <input type="radio" id="first" name="year" value="first">
+                <label for="first"> 1st Year</label>&nbsp &nbsp &nbsp
+            <input type="radio" id="second" name="year" value="second">
+                <label for="second"> 2nd Year</label> &nbsp &nbsp &nbsp
+            <input type="radio" id="third" name="year" value="third">
+                <label for="third"> 3rd Year</label>&nbsp &nbsp &nbsp
+            <input type="radio" id="fourth" name="year" value="fourth">
+                <label for="fourth"> 4th Year</label><br><br>&nbsp &nbsp &nbsp
+            <p>Pick the courses of which you have good knowlegde of:</p> <br>
+            <input type="checkbox" id="course1" name="FE1" value="HTML">
+                <label for="course1">HTML</label>&nbsp &nbsp &nbsp
+            <input type="checkbox" id="course2" name="FE2" value="CSS">
+                <label for="course2">CSS</label>&nbsp &nbsp &nbsp
+            <input type="checkbox" id="course3" name="FE3" value="JavaScript">
+                <label for="course3">JAVASCRIPT</label>&nbsp &nbsp &nbsp
+            <input type="checkbox" id="course4" name="FE4" value="PHP">
+                <label for="course3">PHP</label>&nbsp &nbsp &nbsp
+            <input type="checkbox" id="course5" name="FE5" value="NODEJS">
+                <label for="course3">NODE JS</label><br><br>
+            <label id="ta"for="comments"> Comments:</label><br>
+                <textarea id="comments" rows="4" cols="50">
+                </textarea><br><br>
+                
+            <button type="submit" id="submit" href="index.html"> SUBMIT</button>
+           </form>
+        </div>
+     </div>
+</body>
+</html>
